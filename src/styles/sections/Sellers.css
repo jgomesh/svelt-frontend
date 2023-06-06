@@ -1,0 +1,31 @@
+.seller_container {
+  padding: 32px 24px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller_container h4 {
+  font-size: 24px;
+}
+
+.seller_container button {
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  transition: .3s;
+  width: 300px;
+  cursor: pointer;
+}
+
+.seller_container button:hover {
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(12, 12, 12);
+  font-weight: 700;
+  width: 300px;
+}

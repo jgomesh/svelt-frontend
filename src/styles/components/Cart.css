@@ -1,0 +1,156 @@
+.cartContainer {
+  background-color: rgba(90, 90, 90, 0.493);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  color: white;
+  max-height: 500px;
+  font-weight: 700;
+  min-width: 500px;
+  overflow-y: scroll;
+  right: 0;
+  top: 60px;
+  padding: 24px;
+  z-index: 100;
+  border: 2px solid black;
+  border-radius: 0 0 0 24px;
+}
+
+.hiddeCartContainer {
+  display: none;
+}
+
+.adminProducts {
+  position: relative;
+  margin-top: 50px;
+  background-color: red !important;
+}
+
+.admin__products__container {
+  overflow: hidden;
+  min-height: 35vh;
+}
+
+.product {
+  padding: 16px;
+}
+
+.cartProduct {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
+.cartProduct img {
+  border-radius: 8px;
+  max-width: 100px !important;
+}
+
+.cartProduct button, .payment_button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.cartProduct button:hover, .payment_button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+.cart_items_container {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.edit_cart_container {
+  gap: 8px;
+  display: flex;
+  padding: 8px;
+}
+
+.edit_cart_container input {
+  max-width: 50px;
+}
+
+.payment_button {
+  padding: 8px;
+  margin-top: 16px;
+}
+
+.min_height {
+  min-height: 110vh;
+}
+
+.lds-ring {
+  display: flex;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 8px solid rgb(7, 7, 7);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cartProduct {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .cartContainer {
+    background-color: rgba(90, 90, 90, 0.493);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    color: white;
+    max-height: 80%;
+    font-weight: 700;
+    min-width: 100%;
+    overflow-y: scroll;
+    align-items: center;
+    top: 60px;
+    z-index: 100;
+    border: 2px solid black;
+    border-radius: 0 0 0 24px;
+    padding: 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

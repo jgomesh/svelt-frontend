@@ -1,0 +1,92 @@
+.products_details {
+  margin: 64px 0 64px 0;
+}
+
+.sales_container {
+  min-height: 80vh;
+  padding: 32px;
+}
+
+.products_details div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.products_details button {
+  background-color: black;
+  font-weight: 700;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+  width: 320px;
+}
+
+.products_details button:hover {
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding: 8px 8px;
+  border-radius: 8px;
+}
+
+.sell_status {
+  text-transform: capitalize;
+}
+
+.em_espera {
+  color: rgb(255, 155, 6);
+  text-transform: capitalize;
+}
+
+.em_preparo {
+  color: rgb(216, 219, 39);
+  text-transform: capitalize;
+}
+
+.a_caminho {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+
+.entregue {
+  color: rgb(2, 228, 2);
+  text-transform: capitalize;
+}
+
+.canceled {
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 680px) {
+  .sales_container {
+    padding: 0px;
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .products_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .products_details div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

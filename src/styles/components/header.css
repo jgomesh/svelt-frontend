@@ -1,0 +1,45 @@
+header {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  top: 0;
+  max-width: 100%;
+  z-index: 100;
+  padding: 16px 0px 16px 0px;
+}
+
+header span {
+  margin-left: 16px;
+}
+
+header .signout {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__container button {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  transition: .5s;
+  cursor: pointer;
+  border: none;
+}
+
+.nav__container button:hover {
+  opacity: 50%;
+}

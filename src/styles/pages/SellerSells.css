@@ -1,0 +1,138 @@
+.seller_sells_section {
+  min-height: 80vh;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 64px;
+}
+
+.register_seller_product {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  min-height: 80vh;
+}
+
+.register_seller_product form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.register_seller_product form input {
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: 700;
+}
+
+.register_seller_product form button {
+  background-color: black;
+  border: 1px solid black;
+  padding: 8px;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.register_seller_product form button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(7, 7, 7);
+}
+
+.seller_product {
+  max-width: 300px;
+}
+
+.product_div {
+  border: 2px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+}
+
+.total_price_seller {
+  margin: auto;
+  margin-top: 16px;
+}
+
+.seller_buttons {
+  display: flex;
+  margin: auto;
+  margin-top: 16px;
+  gap: 24px;
+}
+
+.seller_buttons button {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  padding: 8px;
+  transition: .5s;
+}
+
+.seller_buttons button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.seller_products {
+  display: flex;
+  min-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  
+}
+
+.seller_products div {
+  display: flex;
+  max-width: 200px;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.sale_date {
+  border-bottom: 2px solid black;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 680px) {
+  .seller_sells_section {
+    min-height: 80vh;
+    margin-top: 100px;
+    display: flex;
+    gap: 64px;
+    padding: 24px;
+  }
+
+  .seller_product {
+    max-width: 200px;
+  }
+
+  .product_div {
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seller_products {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

@@ -1,0 +1,122 @@
+.login__section__form {
+  background-color: black;
+  border-radius: 0 0 0 16px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 140px;
+  top: 50px;
+  right: 0px;
+  z-index: 100;
+  padding: 24px;
+  transition: .5s;
+  width: 320px;
+}
+
+.login__section__form__container__error {
+  color: red;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  font-size: 6px;
+  margin: 8px 32px 0 32px;
+}
+
+.login__section__form__hidden {
+  background-color: black;
+  border-radius: 0 0 0 16px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 140px;
+  top: 50px;
+  z-index: 100;
+  right: -480px;
+  padding: 24px;
+  transition: .5s;
+  width: 320px;
+}
+
+.login__section__form input, .login__section__form__hidden input {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+}
+
+.login__section__form__container {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: auto;
+}
+
+.login__section__form__container button {
+  background-color: rgb(127, 124, 125);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 8px 16px 8px 16px;
+  margin-top: 8px;
+  transition: .3s;
+  width: 100px;
+  height: 30px;
+}
+.signout {
+  cursor: pointer;
+  transition: .5s;
+}
+
+.signout:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.login__section__form__container button:hover {
+  background-color: white;
+  color: rgb(111, 106, 109);
+  width: 110px;
+}
+
+@media screen and (max-width: 566px) {
+  .login__section__form {
+    background-color: black;
+    border-radius: 0 0 0 16px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 100;
+    height: 140px;
+    top: 50px;
+    right: 0px;
+    padding: 0px;
+    transition: .5s;
+    width: 100vw;
+    padding: 12px 0 12px 0;
+  }
+  .login__section__form input, .login__section__form__hidden input{
+    margin: 0 24px 0 24px;
+  }
+
+  .login__section__form__hidden {
+    background-color: black;
+    border-radius: 0 0 0 16px;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 140px;
+    top: 50px;
+    right: -600px;
+    padding: 0px;
+    transition: .5s;
+    width: 100vw;
+    padding: 12px 0 12px 0;
+  }
+}

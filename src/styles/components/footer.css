@@ -1,0 +1,23 @@
+footer {
+  width: 100%;
+  background-color: black;
+  height: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+footer span {
+  font-size: 12px;
+  margin: 24px 24px 24px 24px;
+}
+
+footer div {
+  background-color:white;
+  width: 100%;
+  position: relative;
+  bottom: 40px;
+  height: 2px;
+}

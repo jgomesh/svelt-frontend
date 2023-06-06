@@ -1,0 +1,16 @@
+.seller_div {
+  display: flex;
+  margin: auto;
+  gap: 24px;
+  max-width: 900px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.seller_details {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}

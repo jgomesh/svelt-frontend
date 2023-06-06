@@ -1,0 +1,28 @@
+.sell_product {
+  max-width: 350px;
+}
+
+.product_container {
+  padding: 24px;
+  min-height: 60vh;
+  margin: 64px auto 64px auto;
+}
+
+.seller_products_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.seller_sold_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data_de_compra {
+  text-align: center;
+}

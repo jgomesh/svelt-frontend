@@ -1,0 +1,107 @@
+.examples {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 12px;
+  gap: 36px;
+  text-transform: uppercase;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.clouth__example__3 {
+  background-image: url('../../../images/ccc.jpg');
+  background-position: center;
+  border-radius: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 230px;
+  height: 450px;
+  display: flex;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clouth__example__1 {
+  background-image: url('../../../images/gucci.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-size: cover;
+  width: 230px;
+  height: 450px;
+  display: flex;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clouth__example__2{
+  background-image: url('../../../images/supai.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 8px;
+  width: 230px;
+  height: 450px;
+  display: flex;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and ((min-width:588px) and (max-width: 800px)) {
+  .clouth__example__3 {
+    width: 150px;
+    height: 450px;
+    background-size: cover;
+  }
+  
+  .clouth__example__1 {
+    width: 150px;
+    height: 450px;
+    background-position: center;
+  }
+  
+  .clouth__example__2{
+    width: 150px;
+    height: 450px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .examples {
+    width: 100%;
+    padding: 64px 0 64px 0;
+    height: 75vh;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 15px;
+    gap: 36px;
+    text-transform: uppercase;
+  }
+  .clouth__example__3 {
+    width: 80%;
+    height: 800px;
+    background-size: cover;
+    background-position: center -100px;
+  }
+  
+  .clouth__example__1 {
+    width: 80%;
+    height: 800px;
+    background-position: center -100px;
+  }
+  
+  .clouth__example__2{
+    width: 80%;
+    height: 800px;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

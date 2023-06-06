@@ -1,0 +1,63 @@
+.c__girl {
+  height: 70vh;
+  position: relative;
+  bottom: 12px;
+  z-index: 1;
+  display: flex;
+  background-color: black;
+}
+
+.left__container {
+  background-image: url('../../../images/girl.jpg');
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 0px 0px 0px 24px;
+}
+
+.right__container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0px 0px 24px 0px;
+}
+
+.right__container p {
+  margin: 64px;
+  max-width: 500px;
+  font-size: 32px;
+}
+
+@media screen and ((min-width:566px) and (max-width: 800px)) {
+  .right__container p {
+    font-size: 24px;
+  }
+  .c__girl {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .right__container p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .right__container {
+    width: 100%;
+  }
+  .left__container {
+    width: 100%;
+    
+    border-radius: 0px 0px 24px 24px;
+  }
+  .c__girl {
+    background-color: white;
+    bottom: 20px;
+    height: 700px;
+    flex-direction: column;
+  }
+}
+

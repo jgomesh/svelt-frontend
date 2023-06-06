@@ -1,0 +1,56 @@
+.payment_section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_finish {
+  margin-top: 64px;
+  gap: 24px;
+  display: flex;
+}
+
+.form_finish_payment {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form_finish_payment input {
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+}
+
+.form_finish_payment button {
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 8px;
+  transition: .3s;
+  border: 2px solid black;
+}
+
+.form_finish_payment button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+.form_finish_payment button:disabled {
+  opacity: 50%;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  padding: 8px;
+  transition: .3s;
+  border: 2px solid black;
+}
